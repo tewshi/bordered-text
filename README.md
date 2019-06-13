@@ -1,11 +1,12 @@
 # BorderedText
 
-Adds Stroke to a Flutter Text widget
-
 [![Build Status](https://travis-ci.org/tewshi/bordered-text.svg?branch=master)](https://travis-ci.org/tewshi/bordered-text)
 
-A package provides an easy way to add shimmer effect in Flutter project
+Adds Stroke to a Flutter Text widget
 
+<p>
+  <img src="https://github.com/tewshi/bordered-text/blob/master/screenshots/sample.png?raw=true"/>
+</p>
 
 ## Getting Started
 
