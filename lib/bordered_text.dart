@@ -3,7 +3,6 @@ library bordered_text;
 import 'package:flutter/widgets.dart';
 
 /// Adds stroke to text widget
-/// {@tool sample}
 /// We can apply a very thin and subtle stroke to a [Text]
 /// ```dart
 /// BorderedText(
@@ -18,7 +17,6 @@ import 'package:flutter/widgets.dart';
 ///   ),
 /// )
 /// ```
-/// {@end-tool}
 class BorderedText extends StatelessWidget {
   BorderedText({
     this.strokeCap = StrokeCap.round,
