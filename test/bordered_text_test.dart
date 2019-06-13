@@ -1,13 +1,65 @@
+import 'package:bordered_text/bordered_text.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:bordered_text/bordered_text.dart';
-
 void main() {
-  test('adds one to input values', () {
-    final calculator = Calculator();
-    expect(calculator.addOne(2), 3);
-    expect(calculator.addOne(-7), -6);
-    expect(calculator.addOne(0), 1);
-    expect(() => calculator.addOne(null), throwsNoSuchMethodError);
+  testWidgets('BorderedText has a stroke that matches the text',
+      (WidgetTester tester) async {
+    await tester.pumpWidget(StrokeTester(title: 'T', message: 'M'));
+
+    final textFinder = find.text('M');
+    final stroke = textFinder.first;
+
+    expect(stroke, findsOneWidget);
   });
+
+  testWidgets('BorderedText 2 texts in a stack', (WidgetTester tester) async {
+    await tester.pumpWidget(StrokeTester(title: 'T', message: 'M'));
+
+    final textFinder = find.text('M');
+    final stroke = textFinder.first;
+
+    final stackParent =
+        find.descendant(of: find.byType(Stack), matching: stroke);
+    final stackChildren =
+        find.ancestor(of: stroke, matching: find.byType(Stack));
+
+    expect(stackParent, findsOneWidget);
+    expect(stackChildren, findsNWidgets(2));
+  });
+
+  testWidgets('BorderedText has two text elements',
+      (WidgetTester tester) async {
+    await tester.pumpWidget(StrokeTester(title: 'T', message: 'M'));
+
+    final textFinder = find.text('M');
+
+    expect(textFinder, findsNWidgets(2));
+  });
+}
+
+class StrokeTester extends StatelessWidget {
+  final String title;
+  final String message;
+
+  const StrokeTester({
+    Key key,
+    @required this.title,
+    @required this.message,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Bordered Text test',
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text(title),
+        ),
+        body: Center(
+          child: BorderedText(child: Text(message)),
+        ),
+      ),
+    );
+  }
 }
