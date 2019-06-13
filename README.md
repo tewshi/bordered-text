@@ -2,6 +2,11 @@
 
 Adds Stroke to a Flutter Text widget
 
+[![Build Status](https://travis-ci.org/tewshi/bordered-text.svg?branch=master)](https://travis-ci.org/tewshi/bordered-text)
+
+A package provides an easy way to add shimmer effect in Flutter project
+
+
 ## Getting Started
 
 ### We can apply a very thin and subtle stroke to a [Text]
