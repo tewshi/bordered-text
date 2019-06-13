@@ -1,4 +1,7 @@
 language: dart
+branches:
+  only:
+    - master
 os:
   - linux
 sudo: false
@@ -12,6 +15,7 @@ addons:
 before_script:
   - git clone https://github.com/flutter/flutter.git
   - ./flutter/bin/flutter doctor
+  - ./flutter/bin/flutter packages get
 script:
   - ./flutter/bin/flutter test
 cache:
