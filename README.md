@@ -7,6 +7,10 @@ Adds Stroke to a Flutter Text widget
 ### We can apply a very thin and subtle stroke to a [Text]
 
 ```dart
+import 'package:bordered_text/bordered_text.dart';
+```
+
+```dart
 BorderedText(
   strokeWidth: 1.0,
   text: Text(
