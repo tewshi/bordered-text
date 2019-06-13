@@ -1,0 +1,14 @@
+dartdoc:
+  tools:
+    sample:
+      description: "Sample code"
+  examplePathPrefix: 'examples'
+  linkTo:
+    url: "https://my.dartdocumentationsite.org/dev/%v%"
+  showUndocumentedCategories: true
+  ignore:
+    - ambiguous-doc-reference
+  errors:
+    - unresolved-doc-reference
+  warnings:
+    - tool-error
