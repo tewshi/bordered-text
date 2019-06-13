@@ -14,18 +14,33 @@ Adds Stroke to a Flutter Text widget
 
 ```dart
 import 'package:bordered_text/bordered_text.dart';
-```
 
-```dart
-BorderedText(
-  strokeWidth: 1.0,
-  text: Text(
-    'Bordered Text',
-    style: TextStyle(
-      decoration: TextDecoration.none,
-      decorationStyle: TextDecorationStyle.wavy,
-      decorationColor: Colors.red,
-    ),
-  ),
-)
+class StrokeTester extends StatelessWidget {
+
+  const StrokeTester({Key key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Bordered Text test',
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Bordered Text'),
+        ),
+        body: Center(
+          child: BorderedText(
+            strokeWidth: 1.0,
+            text: Text(
+              'Bordered Text Widget',
+              style: TextStyle(
+                decoration: TextDecoration.none,
+                decorationColor: Colors.red,
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
 ```
