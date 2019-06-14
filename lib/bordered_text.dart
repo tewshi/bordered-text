@@ -79,7 +79,6 @@ class BorderedText extends StatelessWidget {
           textAlign: child.textAlign,
           textDirection: child.textDirection,
           textScaleFactor: child.textScaleFactor,
-          textWidthBasis: child.textWidthBasis,
         ),
         child,
       ],
