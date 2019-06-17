@@ -30,7 +30,7 @@ class StrokeTester extends StatelessWidget {
         body: Center(
           child: BorderedText(
             strokeWidth: 1.0,
-            text: Text(
+            child: Text(
               'Bordered Text Widget',
               style: TextStyle(
                 decoration: TextDecoration.none,
