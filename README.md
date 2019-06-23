@@ -5,6 +5,10 @@
 Adds Stroke to a Flutter Text widget
 
 <p>
+  <img src="https://github.com/tewshi/bordered-text/blob/master/screenshots/sample2.png?raw=true"/>
+</p>
+
+<p>
   <img src="https://github.com/tewshi/bordered-text/blob/master/screenshots/sample.png?raw=true"/>
 </p>
 
