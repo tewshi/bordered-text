@@ -1,3 +1,6 @@
+## [0.1.2] - 2019-06-24
+* updates version number
+
 ## [0.1.1] - 2019-06-24
 * Adds sample image
 * upgrades package dependencies
