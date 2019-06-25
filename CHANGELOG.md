@@ -1,3 +1,6 @@
+## [0.1.3] - 2019-06-25
+* fixes sdk constraint
+
 ## [0.1.2] - 2019-06-24
 * updates version number
 
