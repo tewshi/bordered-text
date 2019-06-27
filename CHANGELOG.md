@@ -1,3 +1,6 @@
+## [0.1.4] - 2019-06-27
+* fixes sdk constraint in example
+
 ## [0.1.3] - 2019-06-25
 * fixes sdk constraint
 
