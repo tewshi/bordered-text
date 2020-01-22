@@ -1,6 +1,6 @@
 name: bordered_text
 description: Flutter plugin for applying subtle stroke to a Text widget. Supports Android and iOS.
-version: 0.1.4
+version: 1.0.0
 author: tewshi<tjoe4u@gmail.com>
 homepage: https://github.com/tewshi/bordered-text
 
