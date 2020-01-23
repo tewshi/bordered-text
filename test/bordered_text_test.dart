@@ -13,21 +13,6 @@ void main() {
     expect(stroke, findsOneWidget);
   });
 
-  testWidgets('BorderedText 2 texts in a stack', (WidgetTester tester) async {
-    await tester.pumpWidget(StrokeTester(title: 'T', message: 'M'));
-
-    final textFinder = find.text('M');
-    final stroke = textFinder.first;
-
-    final stackParent =
-        find.descendant(of: find.byType(Stack), matching: stroke);
-    final stackChildren =
-        find.ancestor(of: stroke, matching: find.byType(Stack));
-
-    expect(stackParent, findsOneWidget);
-    expect(stackChildren, findsNWidgets(2));
-  });
-
   testWidgets('BorderedText has two text elements',
       (WidgetTester tester) async {
     await tester.pumpWidget(StrokeTester(title: 'T', message: 'M'));
