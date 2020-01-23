@@ -1,3 +1,6 @@
+## [1.0.0] - 2020-01-23
+* fixes text direction on widget root
+
 ## [0.1.4] - 2019-06-27
 * fixes sdk constraint in example
 
