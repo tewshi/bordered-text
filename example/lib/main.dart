@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
 import 'package:bordered_text/bordered_text.dart';
+import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
 
@@ -9,13 +9,13 @@ class MyApp extends StatefulWidget {
 }
 
 class MyAppState extends State<MyApp> {
-  final String title = 'T';
+  final String title = 'Bordered Text Example';
   final String message = 'M';
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Bordered Text test',
+      title: 'Bordered Text Example App',
       home: Scaffold(
         appBar: AppBar(
           title: Text(title),
