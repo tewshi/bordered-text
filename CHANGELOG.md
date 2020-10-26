@@ -1,3 +1,8 @@
+## [1.0.1] - 2020-10-26
+* upgrade android project to use v2 embedding
+* upgrade gradle and kotlin versions for example
+* raise compile sdk version and target sdk to API level 30
+
 ## [1.0.0] - 2020-01-23
 * fixes text direction on widget root
 
