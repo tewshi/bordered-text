@@ -1,3 +1,6 @@
+## [2.0.0] - 2021-03-03
+* add web support
+
 ## [1.0.1] - 2020-10-26
 * upgrade android project to use v2 embedding
 * upgrade gradle and kotlin versions for example
