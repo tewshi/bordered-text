@@ -24,8 +24,7 @@ class BorderedText extends StatelessWidget {
     this.strokeJoin = StrokeJoin.round,
     this.strokeWidth = 6.0,
     this.strokeColor = const Color.fromRGBO(53, 0, 71, 1),
-  })  : assert(child != null),
-        assert(child is Text);
+  }) : assert(child is Text);
 
   /// the stroke cap style
   final StrokeCap strokeCap;
