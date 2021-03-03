@@ -28,9 +28,9 @@ class StrokeTester extends StatelessWidget {
   final String message;
 
   const StrokeTester({
-    Key key,
-    @required this.title,
-    @required this.message,
+    Key? key,
+    required this.title,
+    required this.message,
   }) : super(key: key);
 
   @override
