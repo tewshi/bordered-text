@@ -5,11 +5,9 @@
 // gestures. You can also use WidgetTester to find child widgets in the widget
 // tree, read text, and verify that the values of widget properties are correct.
 
+import 'package:bordered_text_example/main.dart' show MyApp;
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-
-import 'package:bordered_text_example/main.dart' show MyApp;
-
 
 void main() {
   testWidgets('BorderedText has a stroke that matches the text',
@@ -28,10 +26,9 @@ void main() {
     final textFinder = find.text('M');
     final stroke = textFinder.first;
 
-    final stackParent =
-        find.descendant(of: find.byType(Stack), matching: stroke);
+    final stackParent = find.ancestor(of: stroke, matching: find.byType(Stack));
     final stackChildren =
-        find.ancestor(of: stroke, matching: find.byType(Stack));
+        find.descendant(of: stackParent, matching: find.text('M'));
 
     expect(stackParent, findsOneWidget);
     expect(stackChildren, findsNWidgets(2));
