@@ -1,3 +1,6 @@
+## [3.0.1] - 2025-11-17
+* reformat files correctly
+
 ## [3.0.0] - 2025-11-17
 * minor bug fixes
 * bump version and flutter sdk to 3.x.x

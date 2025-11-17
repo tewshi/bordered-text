@@ -1,7 +1,7 @@
 name: bordered_text_example
 description: Demonstrates how to use the bordered_text plugin.
 publish_to: 'none'
-version: 3.0.0
+version: 3.0.1
 
 environment:
   sdk: ^3.10.0
