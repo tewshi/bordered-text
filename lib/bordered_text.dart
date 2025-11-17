@@ -40,7 +40,7 @@ class BorderedText extends StatelessWidget {
 
   /// the [Text] widget to apply stroke on
   final Text child;
-  
+
   /// the alignment of the text
   final Alignment textAlignment;
 

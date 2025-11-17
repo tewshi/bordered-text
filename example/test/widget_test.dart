@@ -10,8 +10,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
-  testWidgets('BorderedText has a stroke that matches the text',
-      (WidgetTester tester) async {
+  testWidgets('BorderedText has a stroke that matches the text', (
+    WidgetTester tester,
+  ) async {
     await tester.pumpWidget(MyApp());
 
     final textFinder = find.text('M');
@@ -27,15 +28,18 @@ void main() {
     final stroke = textFinder.first;
 
     final stackParent = find.ancestor(of: stroke, matching: find.byType(Stack));
-    final stackChildren =
-        find.descendant(of: stackParent, matching: find.text('M'));
+    final stackChildren = find.descendant(
+      of: stackParent,
+      matching: find.text('M'),
+    );
 
     expect(stackParent, findsOneWidget);
     expect(stackChildren, findsNWidgets(2));
   });
 
-  testWidgets('BorderedText has two text elements',
-      (WidgetTester tester) async {
+  testWidgets('BorderedText has two text elements', (
+    WidgetTester tester,
+  ) async {
     await tester.pumpWidget(MyApp());
 
     final textFinder = find.text('M');

@@ -19,9 +19,7 @@ class MyAppState extends State<MyApp> {
     return MaterialApp(
       title: 'Bordered Text Example App',
       home: Scaffold(
-        appBar: AppBar(
-          title: Text(title),
-        ),
+        appBar: AppBar(title: Text(title)),
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -31,10 +29,7 @@ class MyAppState extends State<MyApp> {
                 strokeColor: Colors.red,
                 child: Text(
                   message,
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 21.0,
-                  ),
+                  style: TextStyle(color: Colors.white, fontSize: 21.0),
                 ),
               ),
               SizedBox(height: 10.0),
