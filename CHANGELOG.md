@@ -1,3 +1,7 @@
+## [3.0.0] - 2025-11-17
+* minor bug fixes
+* bump version and flutter sdk to 3.x.x
+
 ## [2.0.0] - 2021-03-03
 * add web support
 
