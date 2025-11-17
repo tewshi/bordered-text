@@ -1,5 +1,3 @@
-library bordered_text;
-
 import 'package:flutter/widgets.dart';
 
 /// Adds stroke to text widget

@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/tewshi/bordered-text.svg?branch=master)](https://travis-ci.org/tewshi/bordered-text)
 
+[![pub package](https://img.shields.io/pub/v/bordered_text.svg)](https://pub.dev/packages/bordered_text)
+
 Adds Stroke to a Flutter Text widget
 
 <p>
@@ -13,6 +15,10 @@ Adds Stroke to a Flutter Text widget
 </p>
 
 ## Getting Started
+
+Check the [installation guide](https://pub.dev/packages/bordered_text/install) for how to install this plugin
+
+## Usage
 
 ### We can apply a very thin and subtle stroke to a [Text]
 
