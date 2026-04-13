@@ -1,3 +1,6 @@
+## [3.0.1+1] - 2026-04-13
+* bump sdk version and upgrade dependencies
+
 ## [3.0.1] - 2025-11-17
 * reformat files correctly
 
