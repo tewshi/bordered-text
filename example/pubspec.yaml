@@ -1,10 +1,10 @@
 name: bordered_text_example
 description: Demonstrates how to use the bordered_text plugin.
 publish_to: 'none'
-version: 3.0.1
+version: 3.0.1+01
 
 environment:
-  sdk: ^3.10.0
+  sdk: ^3.11.0
 
 dependencies:
   flutter:
